@@ -1,15 +1,3 @@
-'''
-ICS3U Turtles Function Assignment
-Name: Akshit Erukulla
-Date Started: November 10, 2024
-Date Completed: November 19, 2024
-Course Code: ICS3U
-Program Title: A Christmas Cityscape Scene
-Description: This program uses python's turtle library to draw a cityscape scene during winter. It consists of many different objects like buildings, perople, cars, trees, and even animations of clouds & snow. It is supposed to symbolize a city during wintertime.
-Functions Written by Me: draw_van, draw_phone, draw_empire_state_building, draw_snowflake, draw_museum, draw_christmas_tree, draw_house, draw_observatory, draw_different_building, draw_person, draw_tree, draw_cloud, draw_xy_axis, draw_sun, draw_road_sidewalk_grass, draw_fence, draw_animated_clouds_snowflakes
-Functions from other students (with student name): building_4 from Aaron Sethi, the three pizza building functions (pizza_shop, circle_square, pizza_build) from Swanish Baweja, the snowfall animation functions (create_snowflake, move_snowflake, snowfall_animation) from Aryan Grover, the draw_moon and draw_space_debris functions from Amol Sriprasadh
-'''
-
 import turtle, math, random, time
 
 turtle.TurtleScreen._RUNNING = True
@@ -21,7 +9,6 @@ screen.tracer(0)     # Removes turtle movements. So, if you want to see the turt
 t = turtle.Pen()
 t.shape("turtle")
 
-# My Functions:
 def draw_van(T, x, y, size, color):
     '''
     Parameters:
@@ -2085,8 +2072,6 @@ def draw_animated_clouds_snowflakes(scrn):
 
     animate()
 
-
-# Aaron Sethi's function:
 def building_4(T, x, y, color, size):
     '''
     This function makes the fourth building of my image with unique windows.
@@ -2370,7 +2355,6 @@ def building_4(T, x, y, color, size):
             T.end_fill()
 
 
-# Swanish Baweja's Pizza Building Functions
 def pizza_shop(S,x,y,size,floors):
     """
     This script uses Python Turtle to draw a simple representation
@@ -2741,7 +2725,6 @@ def pizza_build(S, x, y):
     S.penup()
 
 
-# Aryan's Snowfalling functions:
 def create_snowflake():
     """
     Creates a snowflake with random properties and returns its configuration.
@@ -2829,7 +2812,6 @@ def snowfall_animation():
     screen.mainloop()
 
 
-# Amol's Moon Function:
 def draw_moon(T, x, y, size, num_of_craters, crescent, crescent_color, ring_color, rocket_pos_ratio, debris_count, debris_color="white"):
     """
     Draws a moon with optional craters, a crescent overlay, and a tiny rocket.
